@@ -1,0 +1,59 @@
+#history-container {
+    height: 100vh;
+    background-position: center 35%;
+    margin-top: -40px;
+}
+
+#history-box {
+    height: 400px;
+    width: 80%;
+    border: 1px solid #384a409e;
+    position: relative;
+    top: 50px;
+    margin: auto;
+    border-radius: 3px;
+    background-color: #ffffffc7;
+    box-shadow: 2px 2px 2px #3d7f5f;
+    overflow: scroll;
+}
+
+.filterHistory {
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    left: 10%;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 1px solid #848e893b;
+    width: 80%;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+.filterHistory > li:hover {
+    color: green;
+}
+
+.listedHistory {
+    margin-top: 60px;
+}
+
+.listedHistory > li {
+    list-style-type: circle;
+    padding-right: 30px;
+    border-bottom: 1px solid #848e893b;
+}
+
+
+.historyChallenge {
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.historyDate {
+    margin-top: 2px;
+    font-style: italic;
+    font-size: 12px;
+}

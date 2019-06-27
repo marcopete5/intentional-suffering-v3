@@ -1,0 +1,26 @@
+.categoryCard {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    padding: 30px 30px;
+}
+
+.categoryCard h3 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}
+
+.deckCard {
+    height: 450px;
+    width: 70%;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+}

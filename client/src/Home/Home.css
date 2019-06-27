@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Iowan;
+    src: url('../assets/fonts/IowanOldStBTRoman.ttf')
+}
+
+@font-face {
+    font-family: Hemmet;
+    src: url('../assets/fonts/Hemmet_Personal_Use_Only.ttf')
+}
+
+
+#spinLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-family: "Iowan", sans-serif;
+    font-size: 32px;
+    width: 295px;
+    height: 240px;
+    position: relative;
+}
+
+#spinCont {
+    text-align: center;
+    /* background-image: url(/static/media/shoes.e798b044.png); */
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    background-position: center 180%;
+    background-repeat: no-repeat;
+}
+
+#green {
+    position: relative;
+    bottom: 238px;
+    left: 4px;
+}
+
+#wheel {
+    top: 26px;
+    right: 80px;
+    width: 140%;
+    position: relative;
+    z-index: 1;
+    transition: transform 3s ease-out;
+}
+
+
+#spinBtn {
+    box-shadow: 0px 0px 17px green;
+    background-color: #ffffff;
+    position: absolute;
+    top: 545px;
+    width: 175px;
+    height: 175px;
+    right: 28.2%;
+    z-index: 1;
+    border-radius: 170px;
+    font-family: 'Hemmet';
+}
+
+#spinBtn > p {
+    font-size: 70px;
+    position: relative;
+    bottom: 20px;
+}

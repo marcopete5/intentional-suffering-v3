@@ -1,0 +1,65 @@
+[
+    {
+        "challenge": "Throw or give away 10 things you have not used in the last 6 months",
+        "success": false,
+        "timeAssigned": 324124312412,
+        "datesCompleted": [],
+        "challengeLength": 4,
+        "current": false
+    },{
+        "challenge": "Leave your phone at home all day",
+        "datesCompleted": [],
+        "challengeLength": 4,
+        "current": false
+    },{
+        "challenge": "Say nothing all day except in answer to questions",
+        "datesCompleted": [],
+        "challengeLength": 4,
+        "current": false
+    },{
+        "challenge": "No meat all week",
+        "datesCompleted": [],
+        "challengeLength": 4,
+        "current": false
+    },{
+        "challenge": "Zero sugar/carbs all day",
+        "datesCompleted": [],
+        "challengeLength": 4,
+        "current": false
+    },{
+        "challenge": "Sit in silence without moving for 30 min",
+        "datesCompleted": [],
+        "challengeLength": 4,
+        "current": false
+    },{
+        "challenge": "Fast for 12 hours",
+        "datesCompleted": [],
+        "challengeLength": 4,
+        "current": false
+    },{
+        "challenge": "Give the first person you see after leaving your house $10",
+        "datesCompleted": [],
+        "challengeLength": 4,
+        "current": false
+    },{
+        "challenge": "Bike 30+ miles",
+        "datesCompleted": [],
+        "challengeLength": 4,
+        "current": false
+    },{
+        "challenge": "Run/Walk 10 miles",
+        "datesCompleted": [],
+        "challengeLength": 4,
+        "current": false
+    },{
+        "challenge": "No television shows this week",
+        "datesCompleted": [],
+        "challengeLength": 4,
+        "current": false
+    },{
+        "challenge": "Talk to a stranger for 5 min",
+        "datesCompleted": [],
+        "challengeLength": 4,
+        "current": false
+    }
+]

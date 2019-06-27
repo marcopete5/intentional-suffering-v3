@@ -1,0 +1,32 @@
+#createDeckForm {
+    display: grid;
+    grid-gap: 10px;
+    position: relative;
+    top: 50px;
+    width: 82%;
+    margin: auto;
+    grid-template-rows: 70px 70px 30px;
+    height: 100vh;
+}
+
+#createDeckForm input {
+    background-color: darkgray;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid #0f0f10;
+}
+
+#createDeckForm button {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#categoryDropDown {
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align-last: center;
+    font-size: 30px;
+}
+
+
