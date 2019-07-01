@@ -7,8 +7,7 @@ const optionSchema = new Schema({
         required: true
     },
     timeToComplete: {
-        type: String,
-        required: true
+        type: String
     },
     current: {
         type: Boolean,

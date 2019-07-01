@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 import './Category.css'
 
-const Categories = () => {
+const Categories = (props) => {
     const categories = [
         {
             name: 'Health',
@@ -20,23 +20,21 @@ const Categories = () => {
             logo: emotion
         }]
 
-    const styles = {
-        boxShadow: '2px 3px 5px black',
-        width: '100%',
-        height: '140px',
-        backgroundSize: '80%',
-        backgroundRepeat: 'no-repeat',
-        border: '1px solid black',
-        borderRadius: '70px',
-        backgroundPosition: '14px 15px',
-    }
 
-    const mappedCategories = categories.map(category => <div className='categoryCard'>
-                                                            <Link to={`/category/${category.name}`}><div style={{...styles, backgroundImage: `url(${category.logo})`}} ></div></Link>
+    const mappedCategories = categories.map(category => <Link className='categoryCard' to={`/category/${category.name}`}>
+                                                            <div className='categoryLogo'>
+                                                                <img src={category.logo}/>
+                                                            </div>
                                                             <h3>{category.name}</h3>
-                                                        </div>)
+                                                            <div className='categoryEdit'>edit</div>
+                                                        </Link>)
     return (
-        <div style={{marginTop: 40}}>
+        <div style={{height: '100vh'}}>
+            <div className="spanButtons">
+            <span id='spanX' onClick={() => props.history.push('/')}>x</span> 
+            <span id='spanAdd'>+</span>
+            </div>
+            <h1 style={{marginLeft: 20}}>Categories</h1>
             {mappedCategories}
         </div>
     );

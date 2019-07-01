@@ -10,7 +10,7 @@ app.use(express.json())
 app.use('/api', expressJwt({secret: process.env.SECRET}))
 
 app.use('/auth', require('./routes/authRoutes.js'))
-app.use('/options', require('./routes/sufferRoutes.js'))
+app.use('/api/options', require('./routes/optionRoutes.js'))
 app.use('/api/deck', require('./routes/deckRoutes.js'))
 app.use('/api/history', require('./routes/historyRoutes.js'))
 

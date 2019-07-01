@@ -14,6 +14,7 @@ const Nav = (props) => {
             {/* <div onClick={props.on ? props.toggle : () => {}}>
                 <Link to='/'><img src={logo} alt="" id="logo" /></Link>
             </div> */}
+            <div id='title'><Link to='/' style={{textDecoration: "none", color: 'black'}}>Wheel of Suck</Link></div>
 
             <img onClick={props.toggle} src='https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_filter_list_48px-512.png' alt="" id="drop"  />
 

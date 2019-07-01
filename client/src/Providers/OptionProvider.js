@@ -17,8 +17,9 @@ class OptionProvider extends Component {
         this.state = {
             options: [],
             optionHistory: [],
-            decks: [],
-            on: false
+            decks: [{deckName: 'Decks'}],
+            on: false,
+            selectedDeck: []
         }
     }
 
@@ -38,14 +39,26 @@ class OptionProvider extends Component {
         })
     }
 
+    getOneDeck = (id) => {
+        optionAxios.get(`/api/deck/${id}`).then(res => {
+            console.log(res.data)
+        })
+    }
+
+    getDeckOptions = (deckId) => {
+        optionAxios.get(`/api/options?deck=${deckId}`).then(res => {
+            this.setState({selectedDeck: res.data})
+        })
+    }
+
     getAllOptions = () => {
-        axios.get('/options').then((response) => {
+        optionAxios.get('/api/options').then((response) => {
             this.setState({options: response.data})
         })
     }
 
     addOption = (newOption) => {
-        axios.post('/options', newOption).then(response => {
+        optionAxios.post('/api/options', newOption).then(response => {
             this.setState(({options}) => ({options: [...options, response.data]}))
         })
     }
@@ -81,6 +94,8 @@ class OptionProvider extends Component {
                 clearHistory: this.clearHistory,
                 createDeck: this.createDeck,
                 getDecks: this.getDecks,
+                getOneDeck: this.getOneDeck,
+                getDeckOptions: this.getDeckOptions,
             }}>
                 {this.props.children}
             </Provider>

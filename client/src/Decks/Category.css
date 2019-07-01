@@ -1,26 +1,84 @@
 .categoryCard {
     display: grid;
-    grid-template-columns: 140px 1fr;
-    padding: 30px 30px;
+    grid-template-columns: 80px 1fr 80px;
+    margin: 10px 20px;
+    grid-template-rows: 60px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.optionCard {
+    grid-template-columns: 100px 1fr;
+}
+
+.optionCard h4 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid #00000073;
+    margin: 8px 10px 0px 0px;
+    height: 80%;
 }
 
 .categoryCard h3 {
-    justify-content: center;
     display: flex;
     align-items: center;
-    font-size: 40px;
+    font-size: 18px;
+    margin: 0;
+}
+
+.categoryLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoryCard img  {
+    width: 40%;
+}
+
+.spanButtons {
+    color: #1d471fd4;
+    padding: 0px 20px;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 100;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.backArrow {
+    width: 10%;
+    padding: 10px 0px 0px 20px;
+}
+
+#spanAdd {
+    margin-left: auto;
+}
+.categoryEdit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .deckCard {
-    height: 450px;
-    width: 70%;
-    border: 1px solid black;
-    margin: auto;
-    margin-top: 70px;
+    margin: 10px 20px;
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 20px;
-    color: white;
-    background-color: black;
+}
+
+.cardTitle {
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+#addImg {
+    width: 45%;
+    margin: auto;
 }

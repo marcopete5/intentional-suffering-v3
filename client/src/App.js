@@ -5,6 +5,7 @@ import History from './History';
 import Categories from './Decks/Categories';
 import CreateDeck from './Add/CreateDeck';
 import DeckList from './Decks/DeckList';
+import DeckDetail from './Decks/DeckDetail';
 
 // User Components
 import UserForm from './User';
@@ -16,12 +17,12 @@ import './App.css'
 const App = () => {
   return (
     <div id='main-container'>
-      <div id='title'><Link to='/' style={{textDecoration: "none", color: 'black'}}>Wheel of Suck</Link></div>
       <Switch>
         <ProtectedRoute exact path='/' component={Home} />
         <ProtectedRoute path='/history' component={History} />
         <ProtectedRoute exact path='/category' component={Categories} />
-        <ProtectedRoute path='/category/:categoryName' component={DeckList} />
+        <ProtectedRoute exact path='/category/:categoryName' component={DeckList} />
+        <ProtectedRoute exact path='/category/:categoryName/:_id' component={DeckDetail} />
         <ProtectedRoute path='/add' component={CreateDeck} />
         <Route path='/login' component={() => <UserForm type='login' />} />
         <Route path='/signup' component={() => <UserForm type='signup' />} />

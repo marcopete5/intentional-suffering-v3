@@ -6,7 +6,7 @@
     width: 82%;
     margin: auto;
     grid-template-rows: 70px 70px 30px;
-    height: 100vh;
+    height: 320px;
 }
 
 #createDeckForm input {

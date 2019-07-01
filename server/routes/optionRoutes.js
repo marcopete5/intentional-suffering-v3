@@ -5,7 +5,7 @@ const Option = require('../models/Option')
 router.route('/')
 
     .get((req, res) => {
-        Option.find((err, option) => {
+        Option.find({deck: req.query.deck}, (err, option) => {
             if (err) return res.status(500).send(err)
             return res.status(200).send(option)
         })
@@ -13,8 +13,7 @@ router.route('/')
 
     .post((req, res) => {
         const newOption = new Option(req.body)
-        console.log(req.user)
-        console.log(req.deck)
+        newOption.user = req.user._id
         newOption.save(err => {
             if (err) return res.status(500).send(err)
             return res.status(200).send(newOption)
