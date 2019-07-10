@@ -60,7 +60,7 @@ class CreateDeck extends Component {
         const mappedDecks = this.props.decks.map(deck => <option value={deck.deckName}>{deck.deckName}</option>)
         return (
             <>
-                <form id='createDeckForm' onSubmit={this.handleSubmit}> 
+                <form id='createDeckForm' onSubmit={(e) => this.handleSubmit(e, 'deck')}> 
                     <select id="categoryDropDown" name="category" value={this.state.category} onChange={this.handleChange}>
                         <option value="select">Select A Category</option>
                         <option value="Health">Health</option>

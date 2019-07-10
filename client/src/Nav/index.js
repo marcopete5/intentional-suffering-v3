@@ -20,7 +20,7 @@ const Nav = (props) => {
 
             <ul onClick={props.toggle} id='nav-items' style={{display: props.on ? 'flex' : 'none'}}>
               
-                <li id='addButton'><Link to='/add' ><img src="http://icons.iconarchive.com/icons/iconsmind/outline/256/Add-icon.png" alt=""/></Link></li>
+                <li id='addButton'><Link to='/addDeck' ><img src="http://icons.iconarchive.com/icons/iconsmind/outline/256/Add-icon.png" alt=""/></Link></li>
                 <li id='checkHistory'><Link to='/history' ><img src="https://static.thenounproject.com/png/84467-200.png" alt=""/></Link></li>
                 <li id='challengeDecks'><Link to='/category' ><img src="https://static.thenounproject.com/png/20461-200.png" alt=""/></Link></li>
                 <li id='logout'><a href='/#' onClick={() => {props.logout(); props.clearHistory()}}><img src="http://cdn.onlinewebfonts.com/svg/download_514188.png" /> </a></li>

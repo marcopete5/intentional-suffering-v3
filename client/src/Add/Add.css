@@ -29,4 +29,33 @@
     font-size: 30px;
 }
 
+#timeCompleteForm {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 50px;
+    grid-gap: 20px;
+}
 
+#timeNum {
+    grid-column: 5/8;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+#lengthDropDown {
+    grid-column: 8/9;
+    font-size: 16px;
+    padding: 8px 0px 10px 22px;
+    border: 1px solid black;
+}
+
+input[name=challenge]{
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#challengeSubmit {
+    border: 1px solid black;
+    border-radius: 10px;
+}

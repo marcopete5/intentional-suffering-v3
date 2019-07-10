@@ -4,6 +4,7 @@ import Home from './Home';
 import History from './History';
 import Categories from './Decks/Categories';
 import CreateDeck from './Add/CreateDeck';
+import AddOption from './Add/AddOption';
 import DeckList from './Decks/DeckList';
 import DeckDetail from './Decks/DeckDetail';
 
@@ -23,7 +24,8 @@ const App = () => {
         <ProtectedRoute exact path='/category' component={Categories} />
         <ProtectedRoute exact path='/category/:categoryName' component={DeckList} />
         <ProtectedRoute exact path='/category/:categoryName/:_id' component={DeckDetail} />
-        <ProtectedRoute path='/add' component={CreateDeck} />
+        <ProtectedRoute path='/addDeck' component={CreateDeck} />
+        <ProtectedRoute path='/addOption' component={AddOption} />
         <Route path='/login' component={() => <UserForm type='login' />} />
         <Route path='/signup' component={() => <UserForm type='signup' />} />
 

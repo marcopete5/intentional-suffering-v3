@@ -82,3 +82,11 @@
     width: 45%;
     margin: auto;
 }
+
+.optionForm {
+    display: grid;
+    margin: 10px 20px;
+    grid-auto-rows: 60px;
+    grid-gap: 10px;
+}
+

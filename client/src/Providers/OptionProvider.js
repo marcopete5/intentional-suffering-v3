@@ -19,7 +19,7 @@ class OptionProvider extends Component {
             optionHistory: [],
             decks: [{deckName: 'Decks'}],
             on: false,
-            selectedDeck: []
+            selectedDeck: [{deck:''}]
         }
     }
 
